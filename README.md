@@ -4,9 +4,8 @@ Static site for the DAVID prototype, intended to be published via GitHub Pages.
 
 ## Structure
 
-- `index.html` – one‑page product overview
-- `assets/styles.css` – minimal responsive CSS with light/dark theme
-- `assets/script.js` – dark‑mode toggle + footer year
+- `index.html` – one‑page product overview styled with Tailwind CSS (via CDN)
+- `assets/script.js` – footer year helper
 - `assets/favicon.svg` – simple favicon
 
 ## Local Preview
@@ -41,4 +40,3 @@ python3 -m http.server 8080
 
 - Semantic HTML, skip link, high‑contrast defaults, and reduced motion friendliness.
 - Please run a quick pass with Lighthouse/axe after adding images (ensure alt text).
-
