@@ -1,243 +1,284 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DAVID — Digital Bulletin Board for Food Stories</title>
-    <meta name="description" content="DAVID (Diversity, Awareness, Virtual, Inclusion Device) is a Raspberry Pi‑powered bulletin board that lets students capture food stories, transcribe them, and spark empathy and curiosity in shared dining spaces." />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- Open Graph / Twitter -->
-    <meta property="og:title" content="DAVID — Digital Bulletin Board for Food Stories" />
-    <meta property="og:description" content="Raise awareness of diverse student perspectives on food, encourage empathy and curiosity, and transform mealtime into moments of reflection and cultural connection." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/hero-placeholder.png" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="assets/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-slate-900 antialiased font-['Plus_Jakarta_Sans']">
-    <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-slate-900 focus:px-4 focus:py-2 focus:text-white" href="#main">Skip to content</a>
 
-    <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur" role="banner">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <a class="flex items-center gap-2 text-base font-semibold text-slate-900 transition hover:text-slate-700" href="#" aria-label="DAVID home">
-          <img class="h-9 w-auto object-contain" src="assets/favicon.svg" alt="DAVID bulletin board logo" loading="lazy" />
-          <span class="tracking-wide">DAVID</span>
-        </a>
-        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-500 md:flex" aria-label="Primary">
-          <a class="transition hover:text-slate-900" href="#features">Features</a>
-          <a class="transition hover:text-slate-900" href="#how">How It Works</a>
-          <a class="transition hover:text-slate-900" href="#values">Values</a>
-          <a class="transition hover:text-slate-900" href="#demo">Demo</a>
-          <a class="transition hover:text-slate-900" href="#media">Media</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DAVID - An on-table Digital Bulletin Board for Food Stories</title>
+  <meta name="description"
+    content="DAVID (Diversity, Awareness, Virtual, Inclusion Device) is a Raspberry Pi‑powered bulletin board that lets students capture food stories, transcribe them, and spark empathy and curiosity in shared dining spaces." />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="DAVID — Digital Bulletin Board for Food Stories" />
+  <meta property="og:description"
+    content="Raise awareness of diverse student perspectives on food, encourage empathy and curiosity, and transform mealtime into moments of reflection and cultural connection." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero-placeholder.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <main id="main" tabindex="-1" class="focus:outline-none">
-      <!-- Hero -->
-      <section class="py-16 sm:py-20">
-        <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr,.95fr] lg:items-center">
-          <div class="space-y-6">
-            <h1 class="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">DAVID — Diversity, Awareness, Virtual, Inclusion Device</h1>
-            <p class="text-lg text-slate-600">Our goal is to raise awareness of diverse perspectives students have on food, encourage empathy and curiosity, and transform mealtime into moments of reflection and cultural connection.</p>
-            <div class="flex flex-wrap items-center gap-3">
-              <a class="inline-flex items-center justify-center rounded-lg border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2" href="https://github.com/Penny-Pinchers/DECO3500" target="_blank" rel="noopener">View Source</a>
-              <a class="inline-flex items-center justify-center rounded-lg border border-slate-900/20 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:border-slate-900/40 hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2" href="#demo">Try It / Demo</a>
-              <a class="inline-flex items-center justify-center rounded-lg border border-transparent px-4 py-2 text-sm font-semibold text-slate-500 transition hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2" href="https://github.com/Penny-Pinchers/DECO3500/wiki" target="_blank" rel="noopener">Read Docs</a>
-            </div>
-            <ul class="flex flex-col gap-2 text-sm text-slate-500">
-              <li>University of Queensland · DECO3500</li>
-              <li>Prototype · Raspberry Pi · Python · Next.js</li>
-            </ul>
+<body class="bg-white text-slate-900 antialiased font-['Plus_Jakarta_Sans']">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-slate-900 focus:px-4 focus:py-2 focus:text-white"
+    href="#main">Skip to content</a>
+
+  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur" role="banner">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+      <a class="flex items-center gap-2 text-base font-semibold text-slate-900 transition hover:text-slate-700" href="#"
+        aria-label="DAVID home">
+        <img class="h-9 w-auto object-contain" src="assets/favicon.svg" alt="DAVID bulletin board logo"
+          loading="lazy" />
+        <span class="tracking-wide">DAVID</span>
+      </a>
+      <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-500 md:flex" aria-label="Primary">
+        <a class="transition hover:text-slate-900" href="#features">Features</a>
+        <a class="transition hover:text-slate-900" href="#how">How It Works</a>
+        <a class="transition hover:text-slate-900" href="#values">Values</a>
+        <a class="transition hover:text-slate-900" href="#demo">Demo</a>
+        <a class="transition hover:text-slate-900" href="#media">Media</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="focus:outline-none">
+    <!-- Hero -->
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr,.95fr] lg:items-center">
+        <div class="space-y-6">
+          <h1 class="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">DAVID — Diversity,
+            Awareness, Virtual, Inclusion Device</h1>
+          <p class="text-lg text-slate-600">Our goal is to raise awareness of diverse perspectives students have on
+            food, encourage empathy and curiosity, transforming mealtime into moments of reflection and cultural
+            connection.</p>
+          <div class="flex flex-wrap items-center gap-3">
+            <a class="inline-flex items-center justify-center rounded-lg border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
+              href="https://github.com/Penny-Pinchers/DECO3500" target="_blank" rel="noopener">View Source</a>
+            <a class="inline-flex items-center justify-center rounded-lg border border-slate-900/20 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:border-slate-900/40 hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2"
+              href="#demo">Try It / Demo</a>
+            <a class="inline-flex items-center justify-center rounded-lg border border-transparent px-4 py-2 text-sm font-semibold text-slate-500 transition hover:text-slate-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2"
+              href="https://github.com/Penny-Pinchers/DECO3500/wiki" target="_blank" rel="noopener">Read Docs</a>
           </div>
-          <img class="h-full w-full max-w-lg object-contain" src="assets/favicon.svg" alt="DAVID bulletin board logo" loading="lazy" />
-        </div>
-      </section>
-
-      <!-- Features -->
-      <section id="features" class="py-16 sm:py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 class="text-2xl font-semibold text-slate-900">What You Can Do</h2>
-          <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">Capture Stories</h3>
-              <p class="text-sm text-slate-600">Press a button, snap a photo, and record a short story about your meal. Transcripts make every voice accessible.</p>
-            </article>
-            <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">Listen &amp; Read</h3>
-              <p class="text-sm text-slate-600">Browse a shared board of colorful notes. Play audio or skim transcripts to explore diverse perspectives.</p>
-            </article>
-            <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">Reflect &amp; Connect</h3>
-              <p class="text-sm text-slate-600">Prompts encourage empathy, curiosity, and conversation—turning mealtime into moments of cultural connection.</p>
-            </article>
-            <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">On‑Device by Design</h3>
-              <p class="text-sm text-slate-600">Runs on Raspberry Pi with local transcription (whisper.cpp). Prototype friendly and deployable in shared spaces.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- How it works -->
-      <section id="how" class="bg-slate-50 py-16 sm:py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 class="text-2xl font-semibold text-slate-900">How It Works</h2>
-          <div class="mt-10 grid gap-10 text-center md:grid-cols-2 xl:grid-cols-4">
-            <article class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
-              <div class="flex w-full flex-1 items-center justify-center">
-                <img class="h-auto w-full max-w-xs" src="assets/step1.svg" alt="Student approaching the bulletin board to see posted stories" loading="lazy" />
-              </div>
-              <div class="mt-6 space-y-1 text-center">
-                <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 1</span>
-                <h3 class="text-base font-semibold text-slate-900">People come to see the board</h3>
-              </div>
-            </article>
-            <article class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
-              <div class="flex w-full flex-1 items-center justify-center">
-                <img class="h-auto w-full max-w-xs" src="assets/step2.svg" alt="Student reads the stories displayed on the board" loading="lazy" />
-              </div>
-              <div class="mt-6 space-y-1 text-center">
-                <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 2</span>
-                <h3 class="text-base font-semibold text-slate-900">Read the stories on the board</h3>
-              </div>
-            </article>
-            <article class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
-              <div class="flex w-full flex-1 items-center justify-center">
-                <img class="h-auto w-full max-w-xs" src="assets/step3.svg" alt="Student speaks into a microphone while holding a plate of food" loading="lazy" />
-              </div>
-              <div class="mt-6 space-y-1 text-center">
-                <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 3</span>
-                <h3 class="text-base font-semibold text-slate-900">Tell a story to the microphone and take a picture</h3>
-              </div>
-            </article>
-            <article class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
-              <div class="flex w-full flex-1 items-center justify-center">
-                <img class="h-auto w-full max-w-xs" src="assets/step4.svg" alt="Student posting their story card onto the board" loading="lazy" />
-              </div>
-              <div class="mt-6 space-y-1 text-center">
-                <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 4</span>
-                <h3 class="text-base font-semibold text-slate-900">Put your story on the board</h3>
-              </div>
-            </article>
-          </div>
-
-          <div class="mt-12 flex flex-wrap items-center gap-4 text-sm font-semibold text-slate-600">
-            <div class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center shadow-sm">Kiosk<br /><span class="block text-xs font-medium text-slate-500">Python · ffmpeg · whisper.cpp</span></div>
-            <div class="text-2xl text-slate-300" aria-hidden="true">→</div>
-            <div class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center shadow-sm">API<br /><span class="block text-xs font-medium text-slate-500">Flask</span></div>
-            <div class="text-2xl text-slate-300" aria-hidden="true">→</div>
-            <div class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center shadow-sm">Board<br /><span class="block text-xs font-medium text-slate-500">Next.js</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Values / Ethics -->
-      <section id="values" class="py-16 sm:py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 class="text-2xl font-semibold text-slate-900">Values</h2>
-          <div class="mt-8 grid gap-6 md:grid-cols-3">
-            <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">Inclusion</h3>
-              <p class="text-sm text-slate-600">Transcripts, language‑friendly prompts, and accessible UI ensure many ways to participate.</p>
-            </article>
-            <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">Context</h3>
-              <p class="text-sm text-slate-600">Designed for dining spaces—short, social, and respectful of the environment.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Demo / Try -->
-      <section id="demo" class="bg-slate-50 py-16 sm:py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 class="text-2xl font-semibold text-slate-900">Try the Prototype</h2>
-          <div class="mt-8 grid gap-6 md:grid-cols-[1.3fr,1fr]">
-            <div class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">Local Demo (Dev)</h3>
-              <ol class="list-decimal space-y-2 pl-5 text-sm text-slate-600">
-                <li>Install deps: ffmpeg, Python 3.10+, Node 18+.</li>
-                <li>In the repo, run <code class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">DAVID/dev-setup-windowed.sh</code> (or <code class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">DAVID/board/start.sh</code> for the UI + API).</li>
-                <li>Open the board at <code class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">http://localhost:3000</code>.</li>
-              </ol>
-            </div>
-            <div class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 class="text-lg font-semibold text-slate-900">For Educators</h3>
-              <p class="text-sm text-slate-600">Deploy a supervised prototype in a dining space to spark conversations and reflection. See our <a class="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 transition hover:decoration-slate-500" href="https://github.com/Penny-Pinchers/DECO3500/wiki" target="_blank" rel="noopener">Wiki</a> for study guidance and ethics tips.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Team -->
-      <section id="team" class="py-16 sm:py-20">
-        <div class="mx-auto max-w-6xl px-4 text-slate-600 sm:px-6">
-          <h2 class="text-2xl font-semibold text-slate-900">About the Project</h2>
-          <p class="mt-4 text-sm leading-6">DAVID was created by the Penny Pinchers team for the DECO3500 Social &amp; Mobile Computing course at the University of Queensland.</p>
-          <ul class="mt-4 flex flex-col gap-3 text-sm text-slate-500">
-            <li>Course: DECO3500 (University of Queensland)</li>
-            <li>Goal: Raise awareness of diverse student perspectives on food and encourage empathy and curiosity.</li>
+          <ul class="flex flex-col gap-2 text-sm text-slate-500">
+            <li>University of Queensland · DECO3500</li>
+            <li>Prototype · Raspberry Pi · Python · Next.js</li>
           </ul>
         </div>
-      </section>
+        <img class="h-full w-full max-w-lg object-contain" src="assets/favicon.svg" alt="DAVID bulletin board logo"
+          loading="lazy" />
+      </div>
+    </section>
 
-      <!-- Media -->
-      <section id="media" class="bg-slate-50 py-16 sm:py-20">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 class="text-2xl font-semibold text-slate-900">Media</h2>
-          <p class="mt-3 text-sm text-slate-600">Supporting media that we made that are in the medium of a poster and flyers.</p>
-          <div class="mt-8 grid gap-6 md:grid-cols-3">
-            <article class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <img class="w-full rounded-xl border border-slate-100" src="assets/Poster.svg" alt="DAVID promotional poster" loading="lazy" />
-              <div class="mt-auto flex flex-col gap-3 text-left">
-                <div class="space-y-1">
-                  <h3 class="text-lg font-semibold text-slate-900">Poster</h3>
-                  <p class="text-sm text-slate-600">Full-size visual overview on poster for studio showcases.</p>
-                </div>
-                <a class="inline-flex w-fit items-center justify-center rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2" href="assets/Poster.svg" target="_blank" rel="noopener">Open Poster</a>
-              </div>
-            </article>
-            <article class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <img class="w-full rounded-xl border border-slate-100" src="assets/Flyer1.svg" alt="DAVID flyer highlighting board experience" loading="lazy" />
-              <div class="mt-auto flex flex-col gap-3 text-left">
-                <div class="space-y-1">
-                  <h3 class="text-lg font-semibold text-slate-900">Flyer — Back Side</h3>
-                  <p class="text-sm text-slate-600">Quick snapshot of the board experience to hand out at kiosks.</p>
-                </div>
-                <a class="inline-flex w-fit items-center justify-center rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2" href="assets/Flyer1.svg" target="_blank" rel="noopener">Open Flyer</a>
-              </div>
-            </article>
-            <article class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <img class="w-full rounded-xl border border-slate-100" src="assets/Flyer2.svg" alt="DAVID flyer describing recording a story" loading="lazy" />
-              <div class="mt-auto flex flex-col gap-3 text-left">
-                <div class="space-y-1">
-                  <h3 class="text-lg font-semibold text-slate-900">Flyer — Open Side</h3>
-                  <p class="text-sm text-slate-600">Step-by-step guide showing how to record and post a story.</p>
-                </div>
-                <a class="inline-flex w-fit items-center justify-center rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2" href="assets/Flyer2.svg" target="_blank" rel="noopener">Open Flyer</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="border-t border-slate-200 bg-white" role="contentinfo">
-      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <span>© <span id="year"></span> Penny Pinchers · DAVID</span>
-        <div class="flex items-center gap-4">
-          <a class="transition hover:text-slate-700" href="https://github.com/Penny-Pinchers/DECO3500" target="_blank" rel="noopener">GitHub</a>
-          <a class="transition hover:text-slate-700" href="#values">Values</a>
-          <a class="transition hover:text-slate-700" href="#">Top ↑</a>
+    <!-- Features -->
+    <section id="features" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="text-2xl font-semibold text-slate-900">What You Can Do</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">Capture Stories</h3>
+            <p class="text-sm text-slate-600">Press a button, snap a photo, and record a short story about your meal.
+              Transcripts make every voice accessible.</p>
+          </article>
+          <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">Listen &amp; Read</h3>
+            <p class="text-sm text-slate-600">Browse a shared board of colorful stories. Play audio or skim transcripts to
+              explore diverse perspectives.</p>
+          </article>
+          <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">Reflect &amp; Connect</h3>
+            <p class="text-sm text-slate-600">Prompts encourage empathy, curiosity, and conversation, turning mealtime
+              into moments of cultural connection.</p>
+          </article>
+          <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">On‑Device by Design</h3>
+            <p class="text-sm text-slate-600">Runs on Raspberry Pi with local transcription. Prototype
+              friendly and deployable in shared spaces.</p>
+          </article>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="assets/script.js"></script>
-  </body>
-  </html>
+    <!-- How it works -->
+    <section id="how" class="bg-slate-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="text-2xl font-semibold text-slate-900">How It Works</h2>
+        <div class="mt-10 grid gap-10 text-center md:grid-cols-2 xl:grid-cols-4">
+          <article
+            class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img class="h-auto w-full max-w-xs" src="assets/step1.svg"
+                alt="Student approaching the bulletin board to see posted stories" loading="lazy" />
+            </div>
+            <div class="mt-6 space-y-1 text-center">
+              <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 1</span>
+              <h3 class="text-base font-semibold text-slate-900">People come to see the board</h3>
+            </div>
+          </article>
+          <article
+            class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img class="h-auto w-full max-w-xs" src="assets/step2.svg"
+                alt="Student reads the stories displayed on the board" loading="lazy" />
+            </div>
+            <div class="mt-6 space-y-1 text-center">
+              <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 2</span>
+              <h3 class="text-base font-semibold text-slate-900">Read the stories on the board</h3>
+            </div>
+          </article>
+          <article
+            class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img class="h-auto w-full max-w-xs" src="assets/step3.svg"
+                alt="Student speaks into a microphone while holding a plate of food" loading="lazy" />
+            </div>
+            <div class="mt-6 space-y-1 text-center">
+              <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 3</span>
+              <h3 class="text-base font-semibold text-slate-900">Tell a story to the microphone and take a picture</h3>
+            </div>
+          </article>
+          <article
+            class="flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-12 shadow-sm">
+            <div class="flex w-full flex-1 items-center justify-center">
+              <img class="h-auto w-full max-w-xs" src="assets/step4.svg"
+                alt="Student posting their story card onto the board" loading="lazy" />
+            </div>
+            <div class="mt-6 space-y-1 text-center">
+              <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">Step 4</span>
+              <h3 class="text-base font-semibold text-slate-900">Put your story on the board</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values / Ethics -->
+    <section id="values" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="text-2xl font-semibold text-slate-900">Values</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">Inclusion</h3>
+            <p class="text-sm text-slate-600">Transcripts, language‑friendly prompts, and accessible UI ensure many ways
+              to participate.</p>
+          </article>
+          <article class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">Context</h3>
+            <p class="text-sm text-slate-600">Designed for dining spaces—short, social, and respectful of the
+              environment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo / Try -->
+    <section id="demo" class="bg-slate-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="text-2xl font-semibold text-slate-900">Try the Prototype</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-[1.3fr,1fr]">
+          <div class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">Local Demo (Dev)</h3>
+            <ol class="list-decimal space-y-2 pl-5 text-sm text-slate-600">
+              <li>Run <code
+                class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">DAVID/install.sh</code> to install deps: ffmpeg, Python 3.10+, Node 18+</li>
+              <li>In the repo, run <code
+                  class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">DAVID/dev-setup-windowed.sh</code>
+                (or <code
+                  class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">DAVID/board/dev-setup.sh</code>
+                for the full kiosk experience).</li>
+              <li>Open the board at <code
+                  class="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[0.95rem] font-medium text-slate-700">http://localhost:3000</code>.
+              </li>
+            </ol>
+          </div>
+          <div class="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold text-slate-900">For Educators</h3>
+            <p class="text-sm text-slate-600">Deploy a supervised prototype in a dining space to spark conversations and
+              reflection. See our <a
+                class="font-semibold text-slate-900 underline decoration-slate-300 underline-offset-4 transition hover:decoration-slate-500"
+                href="https://github.com/Penny-Pinchers/DECO3500/wiki" target="_blank" rel="noopener">Wiki</a> for study
+              guidance and ethics tips.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 text-slate-600 sm:px-6">
+        <h2 class="text-2xl font-semibold text-slate-900">About the Project</h2>
+        <p class="mt-4 text-sm leading-6">We created DAVID as we had noticed that students don't often reflect on the foods that they eat and the significance it might have to them. We thought that by allowing students
+          to see and interact with food stories that others in a similar context have shared, it would prompt them
+          to reevaluate and do the same, allowing for a deeper level of appreciation for the foods that they eat.</p>
+        <ul class="mt-4 flex flex-col gap-3 text-sm text-slate-500">
+        </ul>
+      </div>
+    </section>
+
+    <!-- Media -->
+    <section id="media" class="bg-slate-50 py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 class="text-2xl font-semibold text-slate-900">Media</h2>
+        <p class="mt-3 text-sm text-slate-600">Other supporting media that we made for the project.</p>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <img class="w-full rounded-xl border border-slate-100" src="assets/Poster.svg"
+              alt="DAVID promotional poster" loading="lazy" />
+            <div class="mt-auto flex flex-col gap-3 text-left">
+              <div class="space-y-1">
+                <h3 class="text-lg font-semibold text-slate-900">Poster</h3>
+                <p class="text-sm text-slate-600">A full-size visual overview on poster for studio showcases.</p>
+              </div>
+              <a class="inline-flex w-fit items-center justify-center rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2"
+                href="assets/Poster.svg" target="_blank" rel="noopener">Open Poster</a>
+            </div>
+          </article>
+          <article class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <img class="w-full rounded-xl border border-slate-100" src="assets/Flyer1.svg"
+              alt="DAVID flyer highlighting board experience" loading="lazy" />
+            <div class="mt-auto flex flex-col gap-3 text-left">
+              <div class="space-y-1">
+                <h3 class="text-lg font-semibold text-slate-900">Flyer — Back Side</h3>
+                <p class="text-sm text-slate-600">A quick snapshot of the board experience to hand out at the kiosk.</p>
+              </div>
+              <a class="inline-flex w-fit items-center justify-center rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2"
+                href="assets/Flyer1.svg" target="_blank" rel="noopener">Open Flyer</a>
+            </div>
+          </article>
+          <article class="flex h-full flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <img class="w-full rounded-xl border border-slate-100" src="assets/Flyer2.svg"
+              alt="DAVID flyer describing recording a story" loading="lazy" />
+            <div class="mt-auto flex flex-col gap-3 text-left">
+              <div class="space-y-1">
+                <h3 class="text-lg font-semibold text-slate-900">Flyer — Front Side</h3>
+                <p class="text-sm text-slate-600">A step-by-step guide showing how to record and share stories.</p>
+              </div>
+              <a class="inline-flex w-fit items-center justify-center rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-200 focus-visible:ring-offset-2"
+                href="assets/Flyer2.svg" target="_blank" rel="noopener">Open Flyer</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white" role="contentinfo">
+    <div
+      class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <span>© <span id="year"></span> Penny Pinchers · DAVID</span>
+      <div class="flex items-center gap-4">
+        <a class="transition hover:text-slate-700" href="https://github.com/Penny-Pinchers/DECO3500" target="_blank"
+          rel="noopener">GitHub</a>
+        <a class="transition hover:text-slate-700" href="#values">Values</a>
+        <a class="transition hover:text-slate-700" href="#">Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
